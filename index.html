@@ -36,7 +36,7 @@
 		<button class="social-btn" onclick="window.location.href='#'"><i class="fab fa-snapchat"></i></button>
 	</div>
 	<div class="download">
-		<button class="download-btn">Download Resume</button>
+		<button class="download-btn" onclick="downloadResume()">Download Resume</button>
 	</div>
 	<div class="image">
 		<img src="image-modified.png">
@@ -114,19 +114,19 @@
 		<div class="image-container">
     <div class="image-wrapper">
       <img src="notes.png" alt="Image 1" class="gallery-image">
-      <div class="overlay" onclick="window.location.href = 'url_for_image_1';">
+      <div class="overlay" onclick="window.location.href = 'https://rahulkumarmahto97.github.io/Note-app';">
         <span class="arrow">&rarr;</span>
       </div>
     </div>
     <div class="image-wrapper">
       <img src="musis-player.png" alt="Image 2" class="gallery-image">
-      <div class="overlay" onclick="window.location.href = 'url_for_image_2';">
+      <div class="overlay" onclick="window.location.href = 'https://rahulkumarmahto97.github.io/Music-Player-Website/';">
         <span class="arrow">&rarr;</span>
       </div>
     </div>
     <div class="image-wrapper">
       <img src="caseconvertor.png" alt="Image 3" class="gallery-image">
-      <div class="overlay" onclick="window.location.href = 'url_for_image_3';">
+      <div class="overlay" onclick="window.location.href = 'https://rahulkumarmahto97.github.io/Case-Convertor';">
         <span class="arrow">&rarr;</span>
       </div>
     </div>
@@ -149,12 +149,12 @@
 		<button class="social-btn" onclick="window.location.href='#'"><i class="fab fa-snapchat"></i></button>
 </div>
 </div>
-	<button class="download-btna">Download Resume</button>
+	<button class="download-btna" onclick="downloadResume()">Download Resume</button>
 	</div>
 	<div class="only-for-mob">
 		<button onclick="sendEmail()" class="social-e"><i class="fa-solid fa-envelope"></i></button><br>
 	  <button id="appButton" class="social-e"><i class="fa-brands fa-whatsapp"></i></button><br>
-	  <button class="social-e"><i class="fa-solid fa-download"></i></button>
+	  <button class="social-e" onclick="downloadResume()"><i class="fa-solid fa-download"></i></button>
 	</div>
 	<div class="form-body">
 	 <form id="contact-form" action="https://script.google.com/macros/s/AKfycbw3wE3MMzy5EICatfp6_-HYnGN5BucWJdDSdYiEh6rj9WZ_QBg987PGPLiIZUETNJoMOg/exec" method="POST">
@@ -205,3 +205,14 @@
         window.location.href = "https://wa.me/919771149048";
     }
   </script>
+  <script>
+function downloadResume() {
+    // Replace 'resume.pdf' with the path to your resume file
+    var downloadLink = document.createElement("a");
+    downloadLink.href = "resume.pdf";
+    downloadLink.download = "resume.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+}
+</script>
