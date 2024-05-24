@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show Div on Button Click</title>
+<style>
+  /* Style for hiding divs by default */
+  .hidden {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- Buttons -->
+<button onclick="showDiv(1)">Show Div 1</button>
+<button onclick="showDiv(2)">Show Div 2</button>
+<button onclick="showDiv(3)">Show Div 3</button>
+<button onclick="showDiv(4)">Show Div 4</button>
+<button onclick="showDiv(5)">Show Div 5</button>
+
+<!-- Divs -->
+<div id="div1">This is Div 1</div>
+<div id="div2" class="hidden">This is Div 2</div>
+<div id="div3" class="hidden">This is Div 3</div>
+<div id="div4" class="hidden">This is Div 4</div>
+<div id="div5" class="hidden">This is Div 5</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  hideAllDivs();
+  document.getElementById('div1').style.display = 'block';
+});
+
+function showDiv(divNumber) {
+  if (divNumber !== 1) {
+    document.getElementById('div1').style.display = 'none';
+  }
+  hideAllDivs();
+  document.getElementById('div' + divNumber).style.display = 'block';
+}
+function hideAllDivs() {
+  var divsToHide = document.querySelectorAll('div[id^="div"]:not(#div1)');
+  divsToHide.forEach(function(div) {
+    div.style.display = 'none';
+  });
+}
+</script>
+
+</body>
+</html>
