@@ -1,72 +1,207 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Gallery</title>
-  <style>
-    .image-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .image-wrapper {
-      position: relative;
-      margin: 10px;
-    }
-
-    .gallery-image {
-      width: 200px;
-      height: auto;
-      transition: filter 0.5s;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: lightpink;
-      opacity: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: opacity 0.5s;
-    }
-
-    .overlay:hover {
-      opacity: 0.8;
-    }
-
-    .arrow {
-      font-size: 24px;
-      color: white;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <div class="image-container">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+<script src="sheet.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<div class="header">
+	<p class="header-title">Portfolio</p>
+	<div class="nav" style="margin-left: 48%;">
+		<a href="#"><p class="nav-text">Home</p></a>
+		<a href="#section1"><p class="nav-text">About</p></a>
+		<a href="#section2"><p class="nav-text">Skills</p></a>
+		<a href="#section3"><p class="nav-text">Services</p></a>
+		<a href="#section4"><p class="nav-text">Project</p></a>
+		<a href="#section5"><p class="nav-text">Contact Us</p></a>
+	</div>
+	<div class="nav-mob">
+		<a href="#section1"><p class="nav-text"><span class="material-symbols-outlined">priority_high</span></p></a>
+		<a href="#section2"><p class="nav-text"><span class="material-symbols-outlined">psychology</span></p></a>
+		<a href="#section3"><p class="nav-text"><span class="material-symbols-outlined">settings</span></p></a>
+		<a href="#section4"><p class="nav-text"><i class="fa-solid fa-code"></i></p></a>
+		<a href="#section5"><p class="nav-text"><span class="material-symbols-outlined">call</span></p></a>
+	</div>
+</div>
+<div class="body">
+	<p class="body-text">Hello, Its Me</p>
+	<h3 class="body-title">RAHUL KUMAR MAHTO</h3>
+	<p class="body-text">I Am Student Who is,</p>
+	<div class="int">
+	<p class="body-text">Interested in &nbsp; <div id="dynamic-text">Python!</div></p></div>
+	<div class="social">
+		<button class="social-btn" style="margin-left: -1px;" onclick="window.location.href='#'"><i class="fab fa-linkedin"></i></button>
+		<button class="social-btn" onclick="window.location.href='#'"><i class="fab fa-instagram"></i></button>
+		<button class="social-btn" onclick="window.location.href='#'"><i class="fab fa-facebook"></i></button>
+		<button class="social-btn" onclick="window.location.href='#'"><i class="fab fa-snapchat"></i></button>
+	</div>
+	<div class="download">
+		<button class="download-btn">Download Resume</button>
+	</div>
+	<div class="image">
+		<img src="image-modified.png">
+	</div>
+</div>
+<div id="section1" class="section">
+<div class="about">
+	<div class="about-con">
+		<h2 class="about-text">"About <b style="color: #59c4de;">Me〞</b></h2>
+		<div class="text">
+		<p class="text-body">The morning sun painted the sky in hues of pink and gold, casting a warm glow over the sleepy town nestled in the valley below. Birds chirped merrily, heralding the arrival of a new day filled with possibilities. As the world awakened, the aroma of freshly brewed coffee wafted through the air, mingling with the scent of dew-kissed grass. In this tranquil moment, amidst the gentle rustle of leaves and the distant hum of life, there was a sense of serenity that enveloped everything, a reminder that beauty could be found even in the simplest of moments.</p>
+	</div>
+		<img src="post.jpg" class="about-img">
+	</div>
+</div>
+</div>
+<div id="section2" class="section">
+<div class="skills">
+	<h2 class="skills-text">My <b style="color: #59c4de;">Skills</b></h2>
+	<div class="process">
+		<div class="process-type">
+		<p class="type">HTML</p><p class="typeb">98%</p>
+	</div>
+	<div class="progress-bar" style="max-width: 76%;"></div>
+	</div>
+	<div class="process">
+		<div class="process-type">
+		<p class="type">SEO</p><p class="seo-typeb">83%</p>
+	</div>
+	<div class="progress-bar" style="max-width: 65%;"></div>
+	</div>
+	<div class="process">
+		<div class="process-type">
+		<p class="type">Python</p><p class="seo-typea">92%</p>
+	</div>
+	<div class="progress-bar" style="max-width: 74%;"></div>
+	</div>
+	<div class="process">
+		<div class="process-type">
+		<p class="type">Java</p><p class="seo-typec">88%</p>
+	</div>
+	<div class="progress-bar" style="max-width: 71%;"></div>
+	</div>
+	<div class="process">
+		<div class="process-type">
+		<p class="type">CSS</p><p class="seo-typed">78%</p>
+	</div>
+	<div class="progress-bar" style="max-width: 56%;"></div>
+	</div>
+</div>
+</div>
+<div id="section3" class="section">
+    <h2 class="skills-text">My <b style="color: #59c4de;">Services</b></h2>
+    <div class="service-baap">
+        <div class="service">
+            <span class="material-symbols-outlined" id="code">code</span>
+            <p class="service-title">Web Development</p>
+            <p class="service-text">Web development is the digital alchemy that transforms lines of code into captivating online experiences. It's the fusion of creativity and technology, where designers craft stunning visuals that dance harmoniously with developers' intricate algorithms. With each click and scroll, a well-crafted website becomes a portal to new worlds, seamlessly blending functionality with flair.</p>
+        </div>
+        <div class="service">
+            <span class="material-symbols-outlined" id="code">css</span>
+            <p class="service-title">Web Design</p>
+            <p class="service-text">Web design is the digital art of orchestrating pixels into a symphony of user experience. It's where creativity meets functionality, where every line of code whispers the story of seamless navigation and captivating visuals. Like a master architect crafting a skyscraper, a web designer builds virtual worlds, sculpting interfaces that beckon users to explore, interact, and linger.</p>
+        </div>
+        <div class="service">
+            <span class="material-symbols-outlined" id="code">database</span>
+            <p class="service-title">DataBase</p>
+            <p class="service-text">Database management is the digital heartbeat of modern enterprises, orchestrating the symphony of information that fuels innovation and drives decision-making. Like master architects, database managers craft intricate structures where data flows seamlessly, transforming raw bits into actionable insights.</p>
+        </div>
+    </div>
+</div>
+<div id="section4" class="section">
+	<h2 class="skills-text">My <b style="color: #59c4de;">Projects</b></h2>
+	<div class="service-baap">
+		<div class="image-container">
     <div class="image-wrapper">
       <img src="notes.png" alt="Image 1" class="gallery-image">
-      <div class="overlay" onclick="window.location.href = 'url_for_image_1';">
+      <div class="overlay" onclick="window.location.href = 'https://rahulkumarmahto97.github.io/Note-app';">
         <span class="arrow">&rarr;</span>
       </div>
     </div>
     <div class="image-wrapper">
       <img src="musis-player.png" alt="Image 2" class="gallery-image">
-      <div class="overlay" onclick="window.location.href = 'url_for_image_2';">
+      <div class="overlay" onclick="window.location.href = 'https://rahulkumarmahto97.github.io/Music-Player-Website/';">
         <span class="arrow">&rarr;</span>
       </div>
     </div>
     <div class="image-wrapper">
       <img src="caseconvertor.png" alt="Image 3" class="gallery-image">
-      <div class="overlay" onclick="window.location.href = 'url_for_image_3';">
+      <div class="overlay" onclick="window.location.href = 'https://rahulkumarmahto97.github.io/Case-Convertor';">
         <span class="arrow">&rarr;</span>
       </div>
     </div>
   </div>
-</body>
-</html>
+	</div>
+</div>
+
+
+<div id="section5" class="section">
+<div class="skills">
+	<h2 class="skills-text">Contact <b style="color: #59c4de;">Us</b></h2><br><br>
+	<div class="only-for-pc">
+	<button onclick="sendEmail()" class="social-e"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;Click to E-mail me</button><br>
+	<button id="whatsappButton" class="social-e"><i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;Click to WhatsApp me</button>
+	<div class="social-pc">
+	<div class="social">
+		<button class="social-btn" style="margin-left: -1px;" onclick="window.location.href='#'"><i class="fab fa-linkedin"></i></button>
+		<button class="social-btn" onclick="window.location.href='#'"><i class="fab fa-instagram"></i></button>
+		<button class="social-btn" onclick="window.location.href='#'"><i class="fab fa-facebook"></i></button>
+		<button class="social-btn" onclick="window.location.href='#'"><i class="fab fa-snapchat"></i></button>
+</div>
+</div>
+	<button class="download-btna">Download Resume</button>
+	</div>
+	<div class="only-for-mob">
+		<button onclick="sendEmail()" class="social-e"><i class="fa-solid fa-envelope"></i></button><br>
+	  <button id="appButton" class="social-e"><i class="fa-brands fa-whatsapp"></i></button><br>
+	  <button class="social-e"><i class="fa-solid fa-download"></i></button>
+	</div>
+	<div class="form-body">
+	 <form id="contact-form" action="https://script.google.com/macros/s/AKfycbw3wE3MMzy5EICatfp6_-HYnGN5BucWJdDSdYiEh6rj9WZ_QBg987PGPLiIZUETNJoMOg/exec" method="POST">
+    <input type="text" id="name" name="name" required class="box-int" placeholder="Name:"><br><br>
+    <input type="email" id="email" name="email" required class="box-int" placeholder="Email:"><br><br>
+    <textarea id="message" name="message" required placeholder="Message:"></textarea><br><br>
+    <input type="submit" value="Submit" class="btn">
+  </form>
+</div>
+</div>
+</div>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const emailInput = document.getElementById('email').value;
+      const emailPattern = /@(gmail\.com|yahoo\.com)$/;
+      
+      if (!emailPattern.test(emailInput)) {
+        alert('Invalid Email!');
+        return;
+      }
+
+      const url = e.target.action;
+      const formData = new FormData(e.target);
+      fetch(url, {
+        method: 'POST',
+        body: formData
+      }).then(response => {
+        if (response.ok) {
+          alert('Message Send');
+          e.target.reset();
+        } else {
+          alert('Failed.');
+        }
+      }).catch(error => {
+        alert('Error: ' + error.message);
+      });
+    });
+  </script>
+  <script>
+  	document.getElementById('whatsappButton').onclick = function() {
+        window.location.href = "https://wa.me/919771149048";
+    }
+  </script>
+  <script>
+  	document.getElementById('appButton').onclick = function() {
+        window.location.href = "https://wa.me/919771149048";
+    }
+  </script>
